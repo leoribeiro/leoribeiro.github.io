@@ -10,626 +10,659 @@
 
       gtag('config', 'G-F3F44NENCP');
     </script>
-	<title>Leonardo F. R. Ribeiro, PhD, Researcher, Amazon, TU Darmstadt</title>
+	<title>Leonardo F. R. Ribeiro, PhD, Researcher, Amazon</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" 
-content="Leonardo F. R. Ribeiro is a NLP researcher, working on natural language generation, controllability and faithfulness of generation models.">
+	<meta name="description" content="Leonardo F. R. Ribeiro is a NLP researcher, working on natural language generation, controllability and faithfulness of generation models.">
     <meta name="author" content="Leonardo F. R. Ribeiro">
     <meta property="twitter:site" content="@leonardoribeiro">
     <meta property="twitter:creator" content="@leonardoribeiro">
     <meta property="og:site_name" content="Leonardo F. R. Ribeiro">
     <meta property="og:url" content="http://leoribeiro.github.io/">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <meta property="og:locale" content="en-us">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
 
     <style>
-	#rcorners2 {
-  border-radius: 15px 50px; 
-    }
-    .pic-about {
-    font-size: 20px;
-    color: #75838d;
-    }
-    ul.icon-profiles {
-    display: flex;
-    justify-content: center;
-    padding-left: 0;
-    max-width: 400px;
-    margin: auto;
-    font-size: 50px;
-    }
-    ul.icon-profiles li {
-    flex-grow: 0.5;
-    list-style: none;
-    align-self: center;
-    text-align: center;
-    }
-    .text-center {
-    text-align: center!important;
-    }
-    .publication .title {
-    font-size: 20px;
-    margin-bottom: 5px;
-    line-height: 1.2;
-    font-weight: 400 !important;
-    }
-    .publication .authors {
-    font-style: italic;
-    font-size: 14px;
-    }
-    .publication .venue {
-    font-style: italic;
-    font-size: 14px;
-    }
-    .publication {
-        margin-bottom: 10px;
-    }
-    .headpage {
-        margin-bottom: 30px;
-    }
-	</style>
-
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8f9fa;
+            color: #212529;
+        }
+        .profile-header {
+            text-align: center;
+            padding: 4rem 0;
+        }
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #ffffff;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        .profile-header h1 {
+            font-weight: 700;
+            margin-top: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+        .profile-header .lead {
+            max-width: 700px;
+            margin: 1rem auto;
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+        .social-icons a {
+            color: #495057;
+            font-size: 1.75rem;
+            margin: 0 12px;
+            transition: color 0.2s ease-in-out;
+        }
+        .social-icons a:hover {
+            color: #007bff;
+        }
+        .section-title {
+            text-align: center;
+            font-weight: 700;
+            margin-top: 3rem;
+            margin-bottom: 3rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #343a40;
+        }
+        .publication-card {
+            background-color: #ffffff;
+            border: none;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            margin-bottom: 2rem;
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+        .publication-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        }
+        .publication-img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-top-left-radius: 8px;
+            border-bottom-left-radius: 8px;
+            padding: 10px;
+        }
+        .publication-card .card-body {
+            padding: 1.5rem;
+        }
+        .publication-card .title {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #007bff;
+            margin-bottom: 0.5rem;
+        }
+        .publication-card .authors {
+            font-size: 0.9rem;
+            font-style: italic;
+            color: #6c757d;
+            margin-bottom: 0.5rem;
+        }
+        .publication-card .venue {
+            font-size: 0.9rem;
+            color: #495057;
+            margin-bottom: 1rem;
+            font-weight: 500;
+        }
+        .publication-card .links .badge {
+            margin-right: 0.5rem;
+            font-size: 0.8rem;
+            padding: 0.5em 0.8em;
+        }
+        .service-list {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .service-list li {
+            margin-bottom: 0.75rem;
+            font-size: 1rem;
+        }
+        .service-list a {
+            font-weight: 500;
+        }
+        .contact-info a {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
-
 <body>
-    <!--[if lt IE 8]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-            <div class="headpage"></div>
-        <div class="container">
-          <div class="row h-100">
-            
-            <div class="col-xs-6 col-md-9">
-            	<br />
-            	<h1>Leonardo F. R. Ribeiro</h1><p>(Leonardo Filipe Rodrigues Ribeiro)</p>
-                <p class="text-justify">
-                    I'm a Senior Applied Scientist on <a href="https://www.amazon.science/">Amazon AGI</a>, where I focus on building and refining Large Language and Multimodal Foundation Models. My work centers on large-scale training solutions to enhance reasoning capabilities, model performance, and user alignment across a wide range of tasks. My research interests lie in various areas of controllable text generation, summarization and knowledge-intensive NLP tasks such as (multi-modal) Retrieval Augmented Generation (RAG). I hold a PhD in Computer Science from the <a href="https://www.informatik.tu-darmstadt.de/ukp">UKP Lab</a> at the <a href="https://www.tu-darmstadt.de">Technical University of Darmstadt</a>, where I was advised by <a href="https://www.informatik.tu-darmstadt.de/ukp/ukp_home/staff_ukp/prof_dr_iryna_gurevych/index.en.jsp">Iryna Gurevych</a>.
-               
-                </p>
-
-		<p class="text-justify">
-            My work has been published in top-tier AI conferences such as ACL, EMNLP, NAACL, and KDD. I actively contribute to the research community, serving as a Senior Area Chair for NAACL 2025, Tutorial Chair for ACL 2024, and Area Chair for EACL 2024, NAACL 2024, ACL 2024, EMNLP 2024, COLING 2022, and ARR.
-                </p>
-                
-                <p class="text-left">
-                Email: leonardofribeiro@gmail.com | <a href="files/Leonardo_Ribeiro_Resume.pdf" target="_blank">Resume</a> |
+    <div class="container">
+        <header class="profile-header">
+            <img src="files_i/leonardoribeiro.png" alt="Leonardo F. R. Ribeiro" class="profile-pic">
+            <h1>Leonardo F. R. Ribeiro</h1>
+            <p class="lead text-justify">
+                I'm a Senior Applied Scientist on <a href="https://www.amazon.science/">Amazon AGI</a>, where I focus on building and refining Large Language and Multimodal Foundation Models. My work centers on large-scale training solutions to enhance reasoning capabilities, model performance, and user alignment across a wide range of tasks. My research interests lie in various areas of controllable text generation, summarization and knowledge-intensive NLP tasks such as (multi-modal) Retrieval Augmented Generation (RAG). I hold a PhD in Computer Science from the <a href="https://www.informatik.tu-darmstadt.de/ukp">UKP Lab</a> at the <a href="https://www.tu-darmstadt.de">Technical University of Darmstadt</a>, where I was advised by <a href="https://www.informatik.tu-darmstadt.de/ukp/ukp_home/staff_ukp/prof_dr_iryna_gurevych/index.en.jsp">Iryna Gurevych</a>.
+            </p>
+            <p class="lead text-justify">
+                My work has been published in top-tier AI conferences such as ACL, EMNLP, NAACL, and KDD. I actively contribute to the research community, serving as a Senior Area Chair for NAACL 2025, Tutorial Chair for ACL 2024, and Area Chair for EACL 2024, NAACL 2024, ACL 2024, EMNLP 2024, COLING 2022, and ARR.
+            </p>
+            <div class="contact-info mb-4">
+                <a href="mailto:leonardofribeiro@gmail.com">leonardofribeiro@gmail.com</a> |
+                <a href="files/Leonardo_Ribeiro_Resume.pdf" target="_blank">Resume</a> |
                 <a href="files/Leonardo_Ribeiro_CV.pdf" target="_blank">CV</a>
-                 </div>
-                 <div class="col-xs-6 col-md-3 text-center"><div style="padding-top: 30px;padding-right: 30px;padding-bottom: 1px;padding-left: 30px;"><img id="rcorners2" class='img-fluid' src="files_i/leonardoribeiro.png"></div>
-                    <div class="pic-about">
-              
             </div>
-                    <br />
-                    <ul class="icon-profiles" aria-hidden="true">
+            <div class="social-icons">
+                 <a href="https://www.linkedin.com/in/leonardofribeiro/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                 <a href="https://twitter.com/leonardoribeiro" target="_blank" rel="noopener" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                 <a href="https://scholar.google.com.br/citations?user=92j4_4wAAAAJ&hl=en" target="_blank" rel="noopener" aria-label="Google Scholar"><i class="ai ai-google-scholar"></i></a>
+                 <a href="https://www.semanticscholar.org/author/Leonardo-F.-R.-Ribeiro/10430740" target="_blank" rel="noopener" aria-label="Semantic Scholar"><i class="ai ai-semantic-scholar"></i></a>
+                 <a href="https://github.com/leoribeiro" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+        </header>
 
-                 <li>
-                   <a href="https://twitter.com/leonardoribeiro" target="_blank" rel="noopener">
-                     <i class="fa fa-twitter big-icon zoom"></i>
-                   </a>
-                 </li>
-
-                 <li>
-                   <a href="https://scholar.google.com.br/citations?user=92j4_4wAAAAJ&hl=en" target="_blank" rel="noopener">
-                     <i class="ai ai-google-scholar big-icon zoom"></i>
-                   </a>
-                 </li>
-
-                 <li>
-                   <a href="https://www.semanticscholar.org/author/Leonardo-F.-R.-Ribeiro/10430740" target="_blank" rel="noopener">
-                     <i class="ai ai-semantic-scholar big-icon zoom"></i>
-                   </a>
-                 </li>
-
-                 <li>
-                   <a href="https://github.com/leoribeiro" target="_blank" rel="noopener">
-                     <i class="fa fa-github big-icon zoom"></i>
-                   </a>
-                 </li>
-
-                 <li>
-                   <a href="https://www.linkedin.com/in/leonardofribeiro/" target="_blank" rel="noopener">
-                     <i class="fa fa-linkedin big-icon zoom"></i>
-                   </a>
-                 </li>
-               </ul>
-                    
-                </div>
-                 </div>
-               <hr>
-                <br />
-                 <h2>Publications</h2>
-                 <br />
-                <div class="card mb-12 publication">
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col-xs-2 col-sm-4 col-md-3 label-img">
-                                <img class="img-fluid mx-auto d-block" src="images/garage.png" style="max-height:120px; width:auto;">
-                            </div>
-                            <div class="col-xs-8 col-sm-8 col-md-9 main-content">
+        <main>
+            <section id="publications">
+                <h2 class="section-title">Publications</h2>
+                
+                <div class="card publication-card">
+                    <div class="row no-gutters">
+                        <div class="col-md-3">
+                            <img src="images/garage.png" class="publication-img" alt="GaRAGe">
+                        </div>
+                        <div class="col-md-9">
+                            <div class="card-body">
                                 <div class="title">GaRAGe: A Benchmark with Grounding Annotations for RAG Evaluation</div>
                                 <div class="authors">Ionut-Teodor Sorodoc, Leonardo F. R. Ribeiro, Rexhina Blloshmi, Christopher Davis, Adrià de Gispert</div>
                                 <div class="venue">ACL 2025 (Findings)</div>
                                 <div class="links">
-                                        <a class="badge badge-info" href="https://arxiv.org/pdf/2506.07671">pdf</a> <a class="badge badge-secondary" href="https://github.com/amazon-science/GaRAGe">Code</a>
-
+                                    <a class="badge badge-primary" href="https://arxiv.org/pdf/2506.07671">PDF</a>
+                                    <a class="badge badge-secondary" href="https://github.com/amazon-science/GaRAGe">Code</a>
                                 </div>
                             </div>
+                        </div>
                     </div>
                 </div>
-            </div>        
-              <div class="card mb-12 publication">
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col-xs-2 col-sm-4 col-md-3 label-img">
-                                <img class="img-fluid mx-auto d-block" src="images/xrag.png">
-                            </div>
-                            <div class="col-xs-8 col-sm-8 col-md-9 main-content">
+
+                <div class="card publication-card">
+                    <div class="row no-gutters">
+                        <div class="col-md-3">
+                            <img src="images/xrag.png" class="publication-img" alt="XRAG">
+                        </div>
+                        <div class="col-md-9">
+                            <div class="card-body">
                                 <div class="title">XRAG: Cross-lingual Retrieval-Augmented Generation</div>
                                 <div class="authors">Wei Liu, Sony Trenous, Leonardo F. R. Ribeiro, Bill Byrne, Felix Hieber</div>
                                 <div class="venue">pre-print</div>
                                 <div class="links">
-                                        <a class="badge badge-info" href="https://arxiv.org/pdf/2505.10089">pdf</a> 
-
+                                    <a class="badge badge-primary" href="https://arxiv.org/pdf/2505.10089">PDF</a>
                                 </div>
                             </div>
+                        </div>
                     </div>
                 </div>
-            </div>            
-            <div class="card mb-12 publication">
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col-xs-2 col-sm-4 col-md-3 label-img">
-                                <img class="img-fluid mx-auto d-block" src="images/neoqa.png">
-                            </div>
-                            <div class="col-xs-8 col-sm-8 col-md-9 main-content">
+
+                <div class="card publication-card">
+                    <div class="row no-gutters">
+                        <div class="col-md-3">
+                            <img src="images/neoqa.png" class="publication-img" alt="NeoQA">
+                        </div>
+                        <div class="col-md-9">
+                            <div class="card-body">
                                 <div class="title">NeoQA: Evidence-based Question Answering with Generated News Events</div>
                                 <div class="authors">Max Glockner, Xiang Jiang, Leonardo F. R. Ribeiro, Iryna Gurevych, Markus Dreyer</div>
                                 <div class="venue">ACL 2025 (Findings)</div>
                                 <div class="links">
-                                        <a class="badge badge-info" href="https://arxiv.org/pdf/2505.05949">pdf</a> <a class="badge badge-secondary" href="https://github.com/amazon-science/neoqa">Code</a>
-
+                                    <a class="badge badge-primary" href="https://arxiv.org/pdf/2505.05949">PDF</a>
+                                    <a class="badge badge-secondary" href="https://github.com/amazon-science/neoqa">Code</a>
                                 </div>
                             </div>
+                        </div>
                     </div>
                 </div>
-            </div>     
-            <div class="card mb-12 publication">
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col-xs-2 col-sm-4 col-md-3 label-img">
-                                <img class="img-fluid mx-auto d-block" src="images/ticl.png">
-                            </div>
-                            <div class="col-xs-8 col-sm-8 col-md-9 main-content">
+
+                <div class="card publication-card">
+                    <div class="row no-gutters">
+                        <div class="col-md-3">
+                            <img src="images/ticl.png" class="publication-img" alt="Tuning-Free Personalized Alignment">
+                        </div>
+                        <div class="col-md-9">
+                            <div class="card-body">
                                 <div class="title">Tuning-Free Personalized Alignment via Trial-Error-Explain In-Context Learning</div>
                                 <div class="authors">Hyundong Cho, Karishma Sharma, Nicolaas Jedema, Leonardo F. R. Ribeiro, Alessandro Moschitti, Ravi Krishnan, Jonathan May</div>
-                                 <div class="venue">NAACL 2025 (Findings)</div>
+                                <div class="venue">NAACL 2025 (Findings)</div>
                                 <div class="links">
-                                        <a class="badge badge-info" href="https://arxiv.org/pdf/2502.08972">pdf</a>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-            </div>
-            <div class="card mb-12 publication">
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col-xs-2 col-sm-4 col-md-3 label-img">
-                                <img class="img-fluid mx-auto d-block" src="images/speechllm.png">
-                            </div>
-                            <div class="col-xs-8 col-sm-8 col-md-9 main-content">
-                                <div class="title">Speechworthy Instruction-tuned Language Models</div>
-                                <div class="authors">Hyundong Cho, Nicolaas Jedema, Leonardo F. R. Ribeiro, Karishma Sharma, Pedro Szekely, Alessandro Moschitti, Ruben Janssen, and Jonathan May</div>
-                                 <div class="venue">EMNLP 2024</div>
-                                <div class="links">
-                                        <a class="badge badge-info" href="https://arxiv.org/pdf/2409.14672">pdf</a>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-            </div>
-            <div class="card mb-12 publication">
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col-xs-2 col-sm-4 col-md-3 label-img">
-                                <img class="img-fluid mx-auto d-block" src="images/retrieve.png">
-                            </div>
-                            <div class="col-xs-8 col-sm-8 col-md-9 main-content">
-                                <div class="title">Learning When to Retrieve, What to Rewrite, and How to Respond in Conversational QA</div>
-                                <div class="authors">Nirmal Roy, Leonardo F. R. Ribeiro, Rexhina Blloshmi, Kevin Small</div>
-                                 <div class="venue">EMNLP 2024 (Findings)</div>
-                                <div class="links">
-                                        <a class="badge badge-info" href="https://arxiv.org/pdf/2409.15515">pdf</a>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-            </div>
-            <div class="card mb-12 publication">
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col-xs-2 col-sm-4 col-md-3 label-img">
-                                <img class="img-fluid mx-auto d-block" src="images/fantase.png">
-                            </div>
-                            <div class="col-xs-8 col-sm-8 col-md-9 main-content">
-                                <div class="title">FANTAstic SEquences and Where to Find Them: Faithful and Efficient API Call Generation through State-tracked Constrained Decoding and Reranking</div>
-                                <div class="authors">Zhuoer Wang, Leonardo F. R. Ribeiro, Alexandros Papangelis, Rohan Mukherjee, Tzu-Yen Wang, Xinyan Zhao, Arijit Biswas, James Caverlee, Angeliki Metallinou</div>
-                                 <div class="venue">EMNLP 2024 (Findings)</div>
-                                <div class="links">
-                                        <a class="badge badge-info" href="https://arxiv.org/pdf/2407.13945">pdf</a>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-            </div>
-            <div class="card mb-12 publication">
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col-xs-2 col-sm-4 col-md-3 label-img">
-                                <img class="img-fluid mx-auto d-block" src="images/refine.png">
-                            </div>
-                            <div class="col-xs-8 col-sm-8 col-md-9 main-content">
-                                <div class="title">REFINESUMM: Self-Refining MLLM for Generating a Multimodal Summarization Dataset</div>
-                                <div class="authors">Vaidehi Patil, Leonardo F. R. Ribeiro, Mengwen Liu, Mohit Bansal, Markus Dreyer</div>
-                                 <div class="venue">ACL 2024 - 62nd Annual Meeting of the Association for Computational Linguistics</div>
-                                <div class="links">
-                                        <a class="badge badge-info" href="https://assets.amazon.science/2c/db/f18c889a4129a4a0b5a44017f466/refinesumm-self-refining-mllm-for-generating-a-multimodal-summarization-dataset.pdf">pdf</a>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-            </div>
-            <div class="card mb-12 publication">
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col-xs-2 col-sm-4 col-md-3 label-img">
-                                <img class="img-fluid mx-auto d-block" src="images/comp.png">
-                            </div>
-                            <div class="col-xs-8 col-sm-8 col-md-9 main-content">
-                                <div class="title">Measuring Retrieval Complexity in Question Answering Systems</div>
-                                <div class="authors">Matteo Gabburo, Nicolaas Paul Jedema, Siddhant Garg, Leonardo F. R. Ribeiro, Alessandro Moschitti</div>
-                                 <div class="venue">ACL 2024 (Findings) - 62nd Annual Meeting of the Association for Computational Linguistics</div>
-                                <div class="links">
-                                        <a class="badge badge-info" href="https://arxiv.org/pdf/2406.03592">pdf</a>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-            </div>
-            <div class="card mb-12 publication">
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col-xs-2 col-sm-4 col-md-3 label-img">
-                                <img class="img-fluid mx-auto d-block" src="images/scu.png">
-                            </div>
-                            <div class="col-xs-8 col-sm-8 col-md-9 main-content">
-                                <div class="title">On the Role of Summary Content Units in Text Summarization Evaluation</div>
-                                <div class="authors">Marcel Nawrath, Agnieszka Wiktoria Nowak, Tristan Ratz, Danilo Constantin Walenta, Juri Opitz, Leonardo F. R. Ribeiro, Joao Sedoc, Daniel Deutsch, Simon Mille, Yixin Liu, Sebastian Gehrmann, Lining Zhang, Saad Mahamood, Miruna Clinciu, Khyathi Chandu, Yufang Hou</div>
-                                <div class="venue">NAACL 2024 - Annual Conference of the North American Chapter of the Association for Computational Linguistics</div>
-                                <div class="links">
-                                        <a class="badge badge-info" href="https://arxiv.org/pdf/2404.01701.pdf">pdf</a> <a class="badge badge-secondary" href="https://github.com/tristanratz/SCU-text-evaluation/">Code</a>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-            </div>
-            <div class="card mb-12 publication">
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col-xs-2 col-sm-4 col-md-3 label-img">
-                                <img class="img-fluid mx-auto d-block" src="images/read.png">
-                            </div>
-                            <div class="col-xs-8 col-sm-8 col-md-9 main-content">
-                                <div class="title">Generating Summaries with Controllable Readability Levels</div>
-                                <div class="authors">Leonardo F. R. Ribeiro, Mohit Bansal, Markus Dreyer</div>
-                                <div class="venue">EMNLP 2023 - Conference on Empirical Methods in Natural Language Processing</div>
-                                <div class="links">
-                                        <a class="badge badge-info" href="https://arxiv.org/pdf/2310.10623.pdf">pdf</a> <a class="badge badge-secondary" href="https://github.com/amazon-science/controllable-readability-summarization">Code</a>
-
+                                    <a class="badge badge-primary" href="https://arxiv.org/pdf/2502.08972">PDF</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            <div class="card mb-12 publication">
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col-xs-2 col-sm-4 col-md-3 label-img">
-                                <img class="img-fluid mx-auto d-block" src="images/robot.png">
+
+                <div class="card publication-card">
+                    <div class="row no-gutters">
+                        <div class="col-md-3">
+                            <img src="images/speechllm.png" class="publication-img" alt="SpeechLLM">
+                        </div>
+                        <div class="col-md-9">
+                            <div class="card-body">
+                                <div class="title">Speechworthy Instruction-tuned Language Models</div>
+                                <div class="authors">Hyundong Cho, Nicolaas Jedema, Leonardo F. R. Ribeiro, Karishma Sharma, Pedro Szekely, Alessandro Moschitti, Ruben Janssen, and Jonathan May</div>
+                                <div class="venue">EMNLP 2024</div>
+                                <div class="links">
+                                    <a class="badge badge-primary" href="https://arxiv.org/pdf/2409.14672">PDF</a>
+                                </div>
                             </div>
-                            <div class="col-xs-8 col-sm-8 col-md-9 main-content">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card publication-card">
+                    <div class="row no-gutters">
+                        <div class="col-md-3">
+                            <img src="images/retrieve.png" class="publication-img" alt="Conversational QA">
+                        </div>
+                        <div class="col-md-9">
+                            <div class="card-body">
+                                <div class="title">Learning When to Retrieve, What to Rewrite, and How to Respond in Conversational QA</div>
+                                <div class="authors">Nirmal Roy, Leonardo F. R. Ribeiro, Rexhina Blloshmi, Kevin Small</div>
+                                <div class="venue">EMNLP 2024 (Findings)</div>
+                                <div class="links">
+                                    <a class="badge badge-primary" href="https://arxiv.org/pdf/2409.15515">PDF</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card publication-card">
+                    <div class="row no-gutters">
+                        <div class="col-md-3">
+                            <img src="images/fantase.png" class="publication-img" alt="FANTA">
+                        </div>
+                        <div class="col-md-9">
+                            <div class="card-body">
+                                <div class="title">FANTAstic SEquences and Where to Find Them: Faithful and Efficient API Call Generation through State-tracked Constrained Decoding and Reranking</div>
+                                <div class="authors">Zhuoer Wang, Leonardo F. R. Ribeiro, Alexandros Papangelis, Rohan Mukherjee, Tzu-Yen Wang, Xinyan Zhao, Arijit Biswas, James Caverlee, Angeliki Metallinou</div>
+                                <div class="venue">EMNLP 2024 (Findings)</div>
+                                <div class="links">
+                                    <a class="badge badge-primary" href="https://arxiv.org/pdf/2407.13945">PDF</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card publication-card">
+                    <div class="row no-gutters">
+                        <div class="col-md-3">
+                            <img src="images/refine.png" class="publication-img" alt="REFINESUMM">
+                        </div>
+                        <div class="col-md-9">
+                            <div class="card-body">
+                                <div class="title">REFINESUMM: Self-Refining MLLM for Generating a Multimodal Summarization Dataset</div>
+                                <div class="authors">Vaidehi Patil, Leonardo F. R. Ribeiro, Mengwen Liu, Mohit Bansal, Markus Dreyer</div>
+                                <div class="venue">ACL 2024</div>
+                                <div class="links">
+                                    <a class="badge badge-primary" href="https://assets.amazon.science/2c/db/f18c889a4129a4a0b5a44017f466/refinesumm-self-refining-mllm-for-generating-a-multimodal-summarization-dataset.pdf">PDF</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card publication-card">
+                    <div class="row no-gutters">
+                        <div class="col-md-3">
+                            <img src="images/comp.png" class="publication-img" alt="Retrieval Complexity">
+                        </div>
+                        <div class="col-md-9">
+                            <div class="card-body">
+                                <div class="title">Measuring Retrieval Complexity in Question Answering Systems</div>
+                                <div class="authors">Matteo Gabburo, Nicolaas Paul Jedema, Siddhant Garg, Leonardo F. R. Ribeiro, Alessandro Moschitti</div>
+                                <div class="venue">ACL 2024 (Findings)</div>
+                                <div class="links">
+                                    <a class="badge badge-primary" href="https://arxiv.org/pdf/2406.03592">PDF</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card publication-card">
+                    <div class="row no-gutters">
+                        <div class="col-md-3">
+                            <img src="images/scu.png" class="publication-img" alt="SCU">
+                        </div>
+                        <div class="col-md-9">
+                            <div class="card-body">
+                                <div class="title">On the Role of Summary Content Units in Text Summarization Evaluation</div>
+                                <div class="authors">Marcel Nawrath, Agnieszka Wiktoria Nowak, Tristan Ratz, Danilo Constantin Walenta, Juri Opitz, Leonardo F. R. Ribeiro, Joao Sedoc, Daniel Deutsch, Simon Mille, Yixin Liu, Sebastian Gehrmann, Lining Zhang, Saad Mahamood, Miruna Clinciu, Khyathi Chandu, Yufang Hou</div>
+                                <div class="venue">NAACL 2024</div>
+                                <div class="links">
+                                    <a class="badge badge-primary" href="https://arxiv.org/pdf/2404.01701.pdf">PDF</a>
+                                    <a class="badge badge-secondary" href="https://github.com/tristanratz/SCU-text-evaluation/">Code</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card publication-card">
+                    <div class="row no-gutters">
+                        <div class="col-md-3">
+                            <img src="images/read.png" class="publication-img" alt="Controllable Readability">
+                        </div>
+                        <div class="col-md-9">
+                            <div class="card-body">
+                                <div class="title">Generating Summaries with Controllable Readability Levels</div>
+                                <div class="authors">Leonardo F. R. Ribeiro, Mohit Bansal, Markus Dreyer</div>
+                                <div class="venue">EMNLP 2023</div>
+                                <div class="links">
+                                    <a class="badge badge-primary" href="https://arxiv.org/pdf/2310.10623.pdf">PDF</a>
+                                    <a class="badge badge-secondary" href="https://github.com/amazon-science/controllable-readability-summarization">Code</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card publication-card">
+                    <div class="row no-gutters">
+                        <div class="col-md-3">
+                            <img src="images/robot.png" class="publication-img" alt="Robot Language Model">
+                        </div>
+                        <div class="col-md-9">
+                            <div class="card-body">
                                 <div class="title">Learning to reason over scene graphs: a case study of finetuning GPT-2 into a robot language model for grounded task planning</div>
                                 <div class="authors">Georgia Chalvatzaki, Ali Younes, Daljeet Nandha, An Thai Le, Leonardo F. R. Ribeiro, Iryna Gurevych</div>
                                 <div class="venue">2023 Frontiers in Robotics and AI</div>
                                 <div class="links">
-                                        <a class="badge badge-info" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10464606/">pdf</a> <a class="badge badge-warning" href="https://github.com/dnandha/RobLM">data</a>
-
+                                    <a class="badge badge-primary" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10464606/">PDF</a>
+                                    <a class="badge badge-warning" href="https://github.com/dnandha/RobLM">Data</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="card mb-12 publication">
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col-xs-2 col-sm-4 col-md-3 label-img">
-                                <img class="img-fluid mx-auto d-block" src="images/factgraph.png">
-                            </div>
-                            <div class="col-xs-8 col-sm-8 col-md-9 main-content">
+
+                <div class="card publication-card">
+                    <div class="row no-gutters">
+                        <div class="col-md-3">
+                            <img src="images/factgraph.png" class="publication-img" alt="FactGraph">
+                        </div>
+                        <div class="col-md-9">
+                            <div class="card-body">
                                 <div class="title">FactGraph: Evaluating Factuality in Summarization with Semantic Graph Representations</div>
                                 <div class="authors">Leonardo F. R. Ribeiro, Mengwen Liu, Iryna Gurevych, Markus Dreyer, Mohit Bansal</div>
-                                <div class="venue">NAACL 2022 - Annual Conference of the North American Chapter of the Association for Computational Linguistics</div>
+                                <div class="venue">NAACL 2022</div>
                                 <div class="links">
-                                        <a class="badge badge-info" href="https://arxiv.org/pdf/2204.06508.pdf">pdf</a> <a class="badge badge-secondary" href="https://github.com/amazon-research/fact-graph">Code</a>
-                                    
+                                    <a class="badge badge-primary" href="https://arxiv.org/pdf/2204.06508.pdf">PDF</a>
+                                    <a class="badge badge-secondary" href="https://github.com/amazon-research/fact-graph">Code</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="card mb-12 publication">
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col-xs-2 col-sm-4 col-md-3 label-img">
-                                <img class="img-fluid mx-auto d-block" src="images/square.png">
-                            </div>
-                            <div class="col-xs-8 col-sm-8 col-md-9 main-content">
+
+                <div class="card publication-card">
+                    <div class="row no-gutters">
+                        <div class="col-md-3">
+                            <img src="images/square.png" class="publication-img" alt="UKP-SQUARE">
+                        </div>
+                        <div class="col-md-9">
+                            <div class="card-body">
                                 <div class="title">UKP-SQUARE: An Online Platform for Question Answering Research</div>
                                 <div class="authors">Tim Baumgärtner, Kexin Wang, Rachneet Sachdeva, Max Eichler, Gregor Geigle, Clifton Poth, Hannah Sterz, Haritz Puerto, Leonardo FR Ribeiro, Jonas Pfeiffer, Nils Reimers, Gözde Gül Şahin, Iryna Gurevych</div>
-                                <div class="venue">ACL 2022 - 60th Annual Meeting of the Association for Computational Linguistics - Demo Track </div>
+                                <div class="venue">ACL 2022 (Demo)</div>
                                 <div class="links">
-                                        <a class="badge badge-info" href="https://arxiv.org/pdf/2203.13693.pdf">pdf</a> <a class="badge badge-secondary" href="https://github.com/UKP-SQuARE/square-core">Code</a>
-                                    
+                                    <a class="badge badge-primary" href="https://arxiv.org/pdf/2203.13693.pdf">PDF</a>
+                                    <a class="badge badge-secondary" href="https://github.com/UKP-SQuARE/square-core">Code</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="card mb-12 publication">
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col-xs-2 col-sm-4 col-md-3 label-img">
-                                <img class="img-fluid mx-auto d-block" src="images/structadapter.jpg">
-                            </div>
-                            <div class="col-xs-8 col-sm-8 col-md-9 main-content">
+
+                <div class="card publication-card">
+                    <div class="row no-gutters">
+                        <div class="col-md-3">
+                            <img src="images/structadapter.jpg" class="publication-img" alt="Structural Adapters">
+                        </div>
+                        <div class="col-md-9">
+                            <div class="card-body">
                                 <div class="title">Structural Adapters in Pretrained Language Models for AMR-to-Text Generation</div>
                                 <div class="authors">Leonardo F. R. Ribeiro, Yue Zhang and Iryna Gurevych</div>
-                                <div class="venue">EMNLP 2021 - Conference on Empirical Methods in Natural Language Processing</div>
+                                <div class="venue">EMNLP 2021</div>
                                 <div class="links">
-                                        <a class="badge badge-info" href="https://arxiv.org/pdf/2103.09120.pdf">pdf</a> <a class="badge badge-secondary" href="https://github.com/UKPLab/StructAdapt">Code</a> <a class="badge badge-dark" href="https://underline.io/lecture/37330-structural-adapters-in-pretrained-language-models-for-amr-to-text-generation">Video</a>
-                                    
+                                    <a class="badge badge-primary" href="https://arxiv.org/pdf/2103.09120.pdf">PDF</a>
+                                    <a class="badge badge-secondary" href="https://github.com/UKPLab/StructAdapt">Code</a>
+                                    <a class="badge badge-dark" href="https://underline.io/lecture/37330-structural-adapters-in-pretrained-language-models-for-amr-to-text-generation">Video</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="card mb-12 publication">
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col-xs-2 col-sm-4 col-md-3 label-img">
-                                <img class="img-fluid mx-auto d-block" src="images/multilingual-amr.jpg">
-                            </div>
-                            <div class="col-xs-8 col-sm-8 col-md-9 main-content">
+
+                <div class="card publication-card">
+                    <div class="row no-gutters">
+                        <div class="col-md-3">
+                            <img src="images/multilingual-amr.jpg" class="publication-img" alt="Multilingual AMR-to-Text">
+                        </div>
+                        <div class="col-md-9">
+                            <div class="card-body">
                                 <div class="title">Smelting Gold and Silver for Improved Multilingual AMR-to-Text Generation</div>
                                 <div class="authors">Leonardo F. R. Ribeiro, Jonas Pfeiffer, Yue Zhang and Iryna Gurevych</div>
-                                <div class="venue">EMNLP 2021 - Conference on Empirical Methods in Natural Language Processing</div>
+                                <div class="venue">EMNLP 2021</div>
                                 <div class="links">
-                                        <a class="badge badge-info" href="https://arxiv.org/pdf/2109.03808.pdf">pdf</a> <a class="badge badge-secondary" href="https://github.com/UKPLab/m-AMR2Text">Code</a>
-                                    
+                                    <a class="badge badge-primary" href="https://arxiv.org/pdf/2109.03808.pdf">PDF</a>
+                                    <a class="badge badge-secondary" href="https://github.com/UKPLab/m-AMR2Text">Code</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-		                <div class="card mb-12 publication">
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col-xs-2 col-sm-4 col-md-3 label-img">
-                                <img class="img-fluid mx-auto d-block" src="images/investigating-graph.png">
-                            </div>
-                            <div class="col-xs-8 col-sm-8 col-md-9 main-content">
+
+                <div class="card publication-card">
+                    <div class="row no-gutters">
+                        <div class="col-md-3">
+                            <img src="images/investigating-graph.png" class="publication-img" alt="Graph-to-Text">
+                        </div>
+                        <div class="col-md-9">
+                            <div class="card-body">
                                 <div class="title">Investigating Pretrained Language Models for Graph-to-Text Generation</div>
                                 <div class="authors">Leonardo F. R. Ribeiro, Martin Schmitt, Hinrich Schütze and Iryna Gurevych</div>
                                 <div class="venue">NLP for Conversational AI, EMNLP 2021</div>
                                 <div class="links">
-                                        <a class="badge badge-info" href="https://arxiv.org/pdf/2007.08426.pdf">pdf</a> <a class="badge badge-secondary" href="https://github.com/UKPLab/plms-graph2text">Code</a> <a class="badge badge-dark" href="https://underline.io/lecture/39267-investigating-pretrained-language-models-for-graph-to-text-generation">Video</a>
-                                    
+                                    <a class="badge badge-primary" href="https://arxiv.org/pdf/2007.08426.pdf">PDF</a>
+                                    <a class="badge badge-secondary" href="https://github.com/UKPLab/plms-graph2text">Code</a>
+                                    <a class="badge badge-dark" href="https://underline.io/lecture/39267-investigating-pretrained-language-models-for-graph-to-text-generation">Video</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="card mb-12 publication">
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col-xs-2 col-sm-4 col-md-3 label-img">
-                                <img class="img-fluid mx-auto d-block" src="images/graformer.png">
-                            </div>
-                            <div class="col-xs-8 col-sm-8 col-md-9 main-content">
+
+                <div class="card publication-card">
+                    <div class="row no-gutters">
+                        <div class="col-md-3">
+                            <img src="images/graformer.png" class="publication-img" alt="Graformer">
+                        </div>
+                        <div class="col-md-9">
+                            <div class="card-body">
                                 <div class="title">Modeling Graph Structure via Relative Position for Text Generation from Knowledge Graphs</div>
                                 <div class="authors">Martin Schmitt, Leonardo F. R. Ribeiro, Philipp Dufter, Iryna Gurevych, Hinrich Schütze</div>
                                 <div class="venue">TextGraphs-15, NAACL 2021</div>
                                 <div class="links">
-                                        <a class="badge badge-info" href="https://arxiv.org/pdf/2006.09242.pdf">pdf</a> <a class="badge badge-secondary" href="https://github.com/mnschmit/graformer">Code</a>
-                                    
+                                    <a class="badge badge-primary" href="https://arxiv.org/pdf/2006.09242.pdf">PDF</a>
+                                    <a class="badge badge-secondary" href="https://github.com/mnschmit/graformer">Code</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="card mb-12 publication">
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col-xs-2 col-sm-4 col-md-3 label-img">
-                                <img class="img-fluid mx-auto d-block" src="images/global-local-node.png">
-                            </div>
-                            <div class="col-xs-8 col-sm-8 col-md-9 main-content">
+
+                <div class="card publication-card">
+                    <div class="row no-gutters">
+                        <div class="col-md-3">
+                            <img src="images/global-local-node.png" class="publication-img" alt="Global and Local Node Contexts">
+                        </div>
+                        <div class="col-md-9">
+                            <div class="card-body">
                                 <div class="title">Modeling Global and Local Node Contexts for Text Generation from Knowledge Graphs</div>
                                 <div class="authors">Leonardo F. R. Ribeiro, Yue Zhang, Claire Gardent and Iryna Gurevych</div>
-                                <div class="venue">TACL 2020 - Transactions of the Association for Computational Linguistics </div>
+                                <div class="venue">TACL 2020</div>
                                 <div class="links">
-                                        <a class="badge badge-info" href="papers/tacl2020-graph2text.pdf">pdf</a> <a class="badge badge-secondary" href="https://github.com/UKPLab/kg2text">Code</a> <a class="badge badge-dark" href="https://slideslive.com/38939409/modeling-global-and-local-node-contexts-for-text-generation-from-knowledge-graphs">Video</a>
-                                    
+                                    <a class="badge badge-primary" href="papers/tacl2020-graph2text.pdf">PDF</a>
+                                    <a class="badge badge-secondary" href="https://github.com/UKPLab/kg2text">Code</a>
+                                    <a class="badge badge-dark" href="https://slideslive.com/38939409/modeling-global-and-local-node-contexts-for-text-generation-from-knowledge-graphs">Video</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="card mb-12 publication">
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col-xs-2 col-sm-4 col-md-3 label-img">
-                                <img class="img-fluid mx-auto d-block" src="images/dual-graph-encoder.png">
-                            </div>
-                            <div class="col-xs-8 col-sm-8 col-md-9 main-content">
+
+                <div class="card publication-card">
+                    <div class="row no-gutters">
+                        <div class="col-md-3">
+                            <img src="images/dual-graph-encoder.png" class="publication-img" alt="Dual Graph Representations">
+                        </div>
+                        <div class="col-md-9">
+                            <div class="card-body">
                                 <div class="title">Enhancing AMR-to-Text Generation with Dual Graph Representations</div>
                                 <div class="authors">Leonardo F. R. Ribeiro, Claire Gardent and Iryna Gurevych</div>
-                                <div class="venue">EMNLP 2019 - Conference on Empirical Methods in Natural Language Processing</div>
+                                <div class="venue">EMNLP 2019</div>
                                 <div class="links">
-                                        <a class="badge badge-info" href="papers/emnlp19-dualgraph.pdf">pdf</a> <a class="badge badge-secondary" href="https://github.com/UKPLab/emnlp2019-dualgraph">Code</a>
-                                    
+                                    <a class="badge badge-primary" href="papers/emnlp19-dualgraph.pdf">PDF</a>
+                                    <a class="badge badge-secondary" href="https://github.com/UKPLab/emnlp2019-dualgraph">Code</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="card mb-12 publication">
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col-xs-2 col-sm-4 col-md-3 label-img">
-                                <img class="img-fluid mx-auto d-block" src="images/ranking.png">
-                            </div>
-                            <div class="col-xs-8 col-sm-8 col-md-9 main-content">
+
+                <div class="card publication-card">
+                    <div class="row no-gutters">
+                        <div class="col-md-3">
+                            <img src="images/ranking.png" class="publication-img" alt="Ranking Generated Summaries">
+                        </div>
+                        <div class="col-md-9">
+                            <div class="card-body">
                                 <div class="title">Ranking Generated Summaries by Correctness: An Interesting but Challenging Application for Natural Language Inference</div>
                                 <div class="authors">Tobias Falke, Leonardo F. R. Ribeiro, Prasetya Ajie Utama, Ido Dagan and Iryna Gurevych</div>
-                                <div class="venue">ACL 2019 - 57th Annual Meeting of the Association for Computational Linguistics</div>
+                                <div class="venue">ACL 2019</div>
                                 <div class="links">
-                                        <a class="badge badge-info" href="papers/acl19-summary-correctness.pdf">pdf</a>
-                                        <a class="badge badge-warning" href="https://tudatalib.ulb.tu-darmstadt.de/handle/tudatalib/2002">data</a>
-                                    
+                                    <a class="badge badge-primary" href="papers/acl19-summary-correctness.pdf">PDF</a>
+                                    <a class="badge badge-warning" href="https://tudatalib.ulb.tu-darmstadt.de/handle/tudatalib/2002">Data</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="card mb-12 publication">
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col-xs-2 col-sm-4 col-md-3 label-img">
-                                <img class="img-fluid mx-auto d-block" src="images/ataxx.png">
-                            </div>
-                            <div class="col-xs-8 col-sm-8 col-md-9 main-content">
-                                <div class="title">Performance of Monte Carlo
-Tree Search Algorithms when Playing the Game Ataxx</div>
+
+                <div class="card publication-card">
+                    <div class="row no-gutters">
+                        <div class="col-md-3">
+                            <img src="images/ataxx.png" class="publication-img" alt="MCTS Ataxx">
+                        </div>
+                        <div class="col-md-9">
+                            <div class="card-body">
+                                <div class="title">Performance of Monte Carlo Tree Search Algorithms when Playing the Game Ataxx</div>
                                 <div class="authors">Leonardo F. R. Ribeiro, Daniel R. Figueiredo</div>
-                                <div class="venue">ENIAC 2018 - 15th National Meeting on Artificial and Computational Intelligence</div>
+                                <div class="venue">ENIAC 2018</div>
                                 <div class="links">
-                                        <a class="badge badge-info" href="papers/mcts-ataxx-eniac2018.pdf">pdf</a>
-                                    
+                                    <a class="badge badge-primary" href="papers/mcts-ataxx-eniac2018.pdf">PDF</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="card mb-12 publication">
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col-xs-2 col-sm-4 col-md-3 label-img">
-                                <img class="img-fluid mx-auto d-block" src="images/struc2vec.png">
-                            </div>
-                            <div class="col-xs-8 col-sm-8 col-md-9 main-content">
-                                <div class="title"><a href="struc2vec.html">struc2vec</a>: Learning Node Representations from Structural Identity</div>
+
+                <div class="card publication-card">
+                    <div class="row no-gutters">
+                        <div class="col-md-3">
+                            <img src="images/struc2vec.png" class="publication-img" alt="struc2vec">
+                        </div>
+                        <div class="col-md-9">
+                            <div class="card-body">
+                                <div class="title"><a href="struc2vec.html">struc2vec: Learning Node Representations from Structural Identity</a></div>
                                 <div class="authors">Leonardo F. R. Ribeiro, Pedro H. P. Saverese, Daniel R. Figueiredo</div>
-                                <div class="venue">KDD 2017 - ACM SIGKDD International Conference on Knowledge Discovery and Data Mining</div>
+                                <div class="venue">KDD 2017</div>
                                 <div class="links">
-                                        <a class="badge badge-info" href="papers/struc2vec-kdd2017.pdf">pdf</a> <a class="badge badge-secondary" href="https://github.com/leoribeiro/struc2vec">Code</a>
-                                    
+                                    <a class="badge badge-primary" href="papers/struc2vec-kdd2017.pdf">PDF</a>
+                                    <a class="badge badge-secondary" href="https://github.com/leoribeiro/struc2vec">Code</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="card mb-12 publication">
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col-xs-2 col-sm-4 col-md-3 label-img">
-                                <img class="img-fluid mx-auto d-block" src="images/ranking-lawyers.png">
-                            </div>
-                            <div class="col-xs-8 col-sm-8 col-md-9 main-content">
+
+                <div class="card publication-card">
+                    <div class="row no-gutters">
+                        <div class="col-md-3">
+                            <img src="images/ranking-lawyers.png" class="publication-img" alt="Ranking Lawyers">
+                        </div>
+                        <div class="col-md-9">
+                            <div class="card-body">
                                 <div class="title">Ranking lawyers using a social network induced by legal cases</div>
                                 <div class="authors">Leonardo F. R. Ribeiro, Daniel R. Figueiredo</div>
-                                <div class="venue">JBCS - Journal of the Brazilian Computer Society, 23(6), 2017</div>
+                                <div class="venue">JBCS 2017</div>
                                 <div class="links">
-                                       <a class="badge badge-info" href="papers/jbcs2017-ranking-lawyers.pdf">pdf</a> 
-                                    
+                                    <a class="badge badge-primary" href="papers/jbcs2017-ranking-lawyers.pdf">PDF</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                    
-              <hr>
 
-                <h2>Professional Service</h2>
-		
-                <ul>
+            </section>
+
+            <section id="service">
+                <h2 class="section-title">Professional Service</h2>
+                
+                <h5>Editorial & Chairing Roles</h5>
+                <ul class="service-list">
                     <li>Senior Area Chair (Resources and Evaluation) - <a href="https://2025.naacl.org/">NAACL 2025</a></li>
                     <li>Tutorial Chair - The 62nd Annual Meeting of the Association for Computational Linguistics  (<a href="https://2024.aclweb.org/">ACL 2024</a>)</li>
                     <li>Area Chair (Summarization, Machine Learning for NLP [ARR Action Editor]) - The 18th Conference of the European Chapter of the Association for Computational Linguistics  (<a href="https://2024.eacl.org/">EACL 2024</a>)</li>
                     <li>Area Chair (Summarization [ARR Action Editor]) - Annual Conference of the North American Chapter of the Association for Computational Linguistics  (<a href="https://2024.naacl.org/">NAACL 2024</a>)</li>
-                  <li>Area Chair (Natural Language Generation, Summarization and Simplification) - The 29th International Conference on Computational Linguistics  (<a href="https://coling2022.org/">COLING 2022</a>)</li>
+                    <li>Area Chair (Natural Language Generation, Summarization and Simplification) - The 29th International Conference on Computational Linguistics  (<a href="https://coling2022.org/">COLING 2022</a>)</li>
                 </ul>
 
-                 Served as Reviewer/Program Committee Member in the following events:
-                 <br /> 
-                <ul>
-		  <li>ACL Rolling Review  (<a href="https://aclrollingreview.org/">ARR</a>)</li>
-                  <li>Conference on Empirical Methods in Natural Language Processing (EMNLP): <a href="https://2020.emnlp.org/">2020</a>, <a href="https://2021.emnlp.org/">2021</a>, <a href="https://2022.emnlp.org/">2022</a>, <a href="https://2022.emnlp.org/">2023</a></li>
-                  <li> Annual Meeting of the Association for Computational Linguistics (ACL): <a href="https://2021.aclweb.org/">2021</a>, <a href="https://2021.aclweb.org/">2023</a></li>
-                  <li> Conference of the North American Chapter of the Association for Computational Linguistics (NAACL): <a href="https://2021.naacl.org/">2021</a></li>
-                  <li> AAAI Conference on Artificial Intelligence (AAAI): <a href="https://aaai.org/Conferences/AAAI-21/">2021</a>, <a href="https://aaai.org/Conferences/AAAI-22/">2022</a>, <a href="https://aaai.org/Conferences/AAAI-23/">2023</a>, <a href="https://aaai.org/Conferences/AAAI-24/">2024</a></li>
-		  <li> LREC-COLING 2024 - The 2024 Joint International Conference on Computational Linguistics, Language Resources and Evaluation: <a href="https://lrec-coling-2024.org/">2024</a></li>
-			
-
-                  
-
+                <h5 class="mt-4">Reviewing & Program Committee</h5>
+                <p>Served as Reviewer/Program Committee Member in the following events:</p>
+                <ul class="service-list">
+                    <li>ACL Rolling Review  (<a href="https://aclrollingreview.org/">ARR</a>)</li>
+                    <li>Conference on Empirical Methods in Natural Language Processing (EMNLP): <a href="https://2020.emnlp.org/">2020</a>, <a href="https://2021.emnlp.org/">2021</a>, <a href="https://2022.emnlp.org/">2022</a>, <a href="https://2022.emnlp.org/">2023</a></li>
+                    <li>Annual Meeting of the Association for Computational Linguistics (ACL): <a href="https://2021.aclweb.org/">2021</a>, <a href="https://2021.aclweb.org/">2023</a></li>
+                    <li>Conference of the North American Chapter of the Association for Computational Linguistics (NAACL): <a href="https://2021.naacl.org/">2021</a></li>
+                    <li>AAAI Conference on Artificial Intelligence (AAAI): <a href="https://aaai.org/Conferences/AAAI-21/">2021</a>, <a href="https://aaai.org/Conferences/AAAI-22/">2022</a>, <a href="https://aaai.org/Conferences/AAAI-23/">2023</a>, <a href="https://aaai.org/Conferences/AAAI-24/">2024</a></li>
+                    <li>LREC-COLING 2024 - The 2024 Joint International Conference on Computational Linguistics, Language Resources and Evaluation: <a href="https://lrec-coling-2024.org/">2024</a></li>
+                    <li>Generation, Evaluation & Metrics (GEM) Workshop: <a href="https://gem-benchmark.com/workshop">2022</a>, <a href="https://gem-benchmark.com/workshop">2023</a></li>
+                    <li>Evaluation and Comparison of NLP Systems (Eval4NLP): <a href="https://nlpevaluation2020.github.io/">2020</a>, <a href="https://eval4nlp.github.io/">2021</a>, <a href="https://eval4nlp.github.io/">2022</a>, <a href="https://eval4nlp.github.io/">2023</a></li>
+                    <li>Workshop on Graph-Based Natural Language Processing (TextGraphs): <a href="https://sites.google.com/view/textgraphs2020">2020</a>, <a href="https://sites.google.com/view/textgraphs2021">2021</a>, <a href="https://sites.google.com/view/textgraphs2022">2022</a></li>
+                    <li>Workshop on Knowledge Extraction and Integration for Deep Learning Architectures (DeeLIO): <a href="https://sites.google.com/view/deelio-ws/">2022</a></li>
+                    <li>Workshop on Graph Learning Benchmarks (GBL): <a href="https://graph-learning-benchmarks.github.io/glb2022">2022</a>, <a href="https://graph-learning-benchmarks.github.io/glb2023">2023</a></li>
+                    <li>Brazilian Conference on Intelligent Systems (BRACIS): <a href="http://www2.sbc.org.br/bracis2020/">2020</a>, <a href="http://c4ai.inova.usp.br/bracis/">2021</a>, <a href="https://comissoes.sbc.org.br/bracis2022/">2022</a>, <a href="https://www.bracis.dcc.ufmg.br/">2023</a></li>
+                    <li>Symposium on Knowledge Discovery, Mining and Learning (KDMiLe): <a href="https://sbbd.org.br/2023/kdmile-2023/">2023</a> </li>
+                    <li>Workshop on Multilingual Surface Realization: <a href="http://taln.upf.edu/pages/msr2019-ws/">2019</a>, <a href="http://taln.upf.edu/pages/msr2020-ws/">2020</a></li>
                 </ul>
-                <ul>
-                      <li>Generation, Evaluation & Metrics (GEM) Workshop: <a href="https://gem-benchmark.com/workshop">2022</a>, <a href="https://gem-benchmark.com/workshop">2023</a></li>
-                  <li>Evaluation and Comparison of NLP Systems (Eval4NLP): <a href="https://nlpevaluation2020.github.io/">2020</a>, <a href="https://eval4nlp.github.io/">2021</a>, <a href="https://eval4nlp.github.io/">2022</a>, <a href="https://eval4nlp.github.io/">2023</a></li>
-                  <li>Workshop on Graph-Based Natural Language Processing (TextGraphs): <a href="https://sites.google.com/view/textgraphs2020">2020</a>, <a href="https://sites.google.com/view/textgraphs2021">2021</a>, <a href="https://sites.google.com/view/textgraphs2022">2022</a></li>
-                  <li>Workshop on Knowledge Extraction and Integration for Deep Learning Architectures (DeeLIO): <a href="https://sites.google.com/view/deelio-ws/">2022</a></li>
-                  <li>Workshop on Graph Learning Benchmarks (GBL): <a href="https://graph-learning-benchmarks.github.io/glb2022">2022</a>, <a href="https://graph-learning-benchmarks.github.io/glb2023">2023</a></li>
-                                    <li>Brazilian Conference on Intelligent Systems (BRACIS): <a href="http://www2.sbc.org.br/bracis2020/">2020</a>, <a href="http://c4ai.inova.usp.br/bracis/">2021</a>, <a href="https://comissoes.sbc.org.br/bracis2022/">2022</a>, <a href="https://www.bracis.dcc.ufmg.br/">2023</a></li>
-                    <li> Symposium on Knowledge Discovery, Mining and Learning (KDMiLe): <a href="https://sbbd.org.br/2023/kdmile-2023/">2023</a> </li>
-                  <li>Workshop on Multilingual Surface Realization: <a href="http://taln.upf.edu/pages/msr2019-ws/">2019</a>, <a href="http://taln.upf.edu/pages/msr2020-ws/">2020</a></li>
 
-                  
+                <h5 class="mt-4">Journal Reviewing</h5>
+                <p>Served as reviewer to the following journals:</p>
+                <ul class="service-list">
+                    <li>Journal of Machine Learning Research (<a href="https://www.jmlr.org/">JMLR</a>)</li>
+                    <li>Language Resources and Evaluation (<a href="https://www.springer.com/journal/10579">LREV</a>)</li>
                 </ul>
-                Served as reviewer to the following journals:
-                <ul>
-                  <li>Journal of Machine Learning Research  (<a href="https://www.jmlr.org/">JMLR</a>)</li>
-                  <li>Language Resources and Evaluation  (<a href="https://www.springer.com/journal/10579">LREV</a>)</li>
-                </ul>
-                
-                <hr>
-              
+            </section>
+        </main>
 
-                
-              </p>
-              <br />
-              <br />
-                
-          </div>
+        
+    </div>
 
-
-</body></html>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
